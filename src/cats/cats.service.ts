@@ -19,6 +19,6 @@ export class CatsService {
   }
 
   async findAll(): Promise<Cat[]> {
-    return await this.db().select();
+    return this.db().select();
   }
 }
